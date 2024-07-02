@@ -7,7 +7,8 @@ struct airtune2App: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginViewScreen()
+            finalViewScreen()
+//            LoginViewScreen()
 //                .environmentObject(modelContainerViewModel)
         }
     }
