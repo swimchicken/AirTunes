@@ -1,8 +1,17 @@
-//
-//  AppDelegate.swift
-//  airtune2
-//
-//  Created by swimchichen on 2024/7/3.
-//
+import SwiftUI
+import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
 
-import Foundation
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
+    func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance.handle(url)
+    }
+}

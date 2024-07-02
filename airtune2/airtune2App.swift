@@ -1,15 +1,23 @@
 import SwiftUI
+import FirebaseDatabaseInternal
 import SwiftData
+import FirebaseCore
+//import FirebaseCore
+import FirebaseAuth
+import GoogleSignIn
+
+
 
 @main
 struct airtune2App: App {
-//    @StateObject private var modelContainerViewModel = ModelContainerViewModel()
-    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
         WindowGroup {
-            finalViewScreen()
+            ContentView()
 //            LoginViewScreen()
-//                .environmentObject(modelContainerViewModel)
+//            finalViewScreen()
+//            LoginViewScreen()
         }
     }
 }

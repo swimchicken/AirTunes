@@ -2,7 +2,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct AnimationView: View {
-    @State private var nameManager = "name"
+    var userName: String
     @State private var showInitialText = true
     @State private var showSecondaryContent = false
     @State private var isAnimation: Bool = false
@@ -22,7 +22,7 @@ struct AnimationView: View {
                 // Welcome Text
                 VStack {
                     if showInitialText {
-                        Text("您好~ \(nameManager)")
+                        Text("您好~ \(userName)")
                             .font(
                                 Font.custom("Poppins", size: 24)
                                     .weight(.semibold)
@@ -98,7 +98,6 @@ struct AnimationView: View {
     }
 }
 
-
 // Custom UIViewRepresentable for UIVisualEffectView to apply blur
 struct VisualEffectBlur: UIViewRepresentable {
     var blurStyle: UIBlurEffect.Style
@@ -112,5 +111,5 @@ struct VisualEffectBlur: UIViewRepresentable {
 }
 
 #Preview {
-    AnimationView()
+    AnimationView(userName: "Test User")
 }

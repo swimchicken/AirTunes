@@ -1,7 +1,10 @@
 import SwiftUI
+import FirebaseCore
 import SDWebImageSwiftUI
+import GoogleSignIn
+import FirebaseAuth
 
-struct ViewScreen: View {
+struct loginViewScreen: View {
     @State var isAnimation: Bool = false
     @State private var navigateToLoginScreen: Bool = false
 
@@ -81,72 +84,102 @@ struct LoginViewScreen: View {
     @State private var isSignedIn = false
     @State private var isAnimation: Bool = false
     @State private var navigateToAnimationViewScreen: Bool = false
+    @State private var userName: String = ""
 
     var body: some View {
         NavigationStack {
-            Group {
-                if navigateToAnimationViewScreen {
-                    EmptyView() // 占位符，防止導航前畫面空白
-                } else if isSignedIn {
-                    Text("已登入")
-                } else {
-                    ZStack {
-                        Color.black
-                            .edgesIgnoringSafeArea(.all)
-                        
-                        AnimatedImage(name: "animat01.gif", isAnimating: $isAnimation)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .edgesIgnoringSafeArea(.all)
-                        
-                        VStack {
-                            Spacer()
-                            
-                            VStack(alignment: .leading, spacing: 0) {
-                                Text("用音樂")
-                                    .font(.system(size: 34, weight: .bold))
-                                    .foregroundColor(.white)
-                                    .padding(.bottom, 2)
-                                Text("定義每個時刻。")
-                                    .font(.system(size: 34, weight: .bold))
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.leading, 20)
-                            .padding(.bottom, 30)
-
-                            VStack(spacing: 20) {
-                                LoginButton(isSignedIn: $isSignedIn, provider: "iCloud") {
-                                    navigateToAnimationViewScreen = true
-                                }
-                                .frame(width: 370, height: 50)
-                                
-                                LoginButton(isSignedIn: $isSignedIn, provider: "Google") {
-                                    navigateToAnimationViewScreen = true
-                                }
-                                .frame(width: 370, height: 50)
-                            }
-                            .padding(.bottom, 50)
-                        }
+            ZStack {
+                Color.black
+                    .edgesIgnoringSafeArea(.all)
+                
+                AnimatedImage(name: "animat01.gif", isAnimating: $isAnimation)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    Spacer()
+                    
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text("用音樂")
+                            .font(.system(size: 34, weight: .bold))
+                            .foregroundColor(.white)
+                            .padding(.bottom, 2)
+                        Text("定義每個時刻。")
+                            .font(.system(size: 34, weight: .bold))
+                            .foregroundColor(.white)
                     }
+                    .padding(.leading, 20)
+                    .padding(.bottom, 30)
+
+                    VStack(spacing: 20) {
+                        LoginButton(isSignedIn: $isSignedIn, provider: "iCloud") {
+                            navigateToAnimationViewScreen = true
+                        }
+                        .frame(width: 370, height: 50)
+                        
+                        LoginButton(isSignedIn: $isSignedIn, provider: "Google") {
+                            signInWithGoogle()
+                        }
+                        .frame(width: 370, height: 50)
+                    }
+                    .padding(.bottom, 50)
                 }
             }
             .onAppear {
                 isAnimation = true
             }
             .navigationDestination(isPresented: $navigateToAnimationViewScreen) {
-                AnimationView().navigationBarBackButtonHidden(true)
+                AnimationView(userName: userName).navigationBarBackButtonHidden(true)
             }
         }
     }
-}
+    
+    private func signInWithGoogle() {
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        // 創建 Google Sign In 配置對象
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
 
-//struct AnimationViewScreen: View {
-//    var body: some View {
-//        Text("This is the Animation View Screen")
-//            .font(.largeTitle)
-//            .padding()
-//    }
-//}
+        // 開始登錄流程
+        guard let presentingViewController = getRootViewController() else { return }
+        
+        GIDSignIn.sharedInstance.signIn(withPresenting: presentingViewController) { result, error in
+            if let error = error {
+                print("Error signing in with Google: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString else {
+                print("Error fetching Google user")
+                return
+            }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: user.accessToken.tokenString)
+            
+            Auth.auth().signIn(with: credential) { authResult, error in
+                if let error = error {
+                    print("Firebase sign in with Google failed: \(error.localizedDescription)")
+                    return
+                }
+                
+                // 登錄成功
+                DispatchQueue.main.async {
+                    self.isSignedIn = true
+                    self.userName = user.profile?.name ?? "Unknown User"
+                    self.navigateToAnimationViewScreen = true
+                }
+            }
+        }
+    }
+    
+    private func getRootViewController() -> UIViewController? {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene else { return nil }
+        return windowScene.windows.first?.rootViewController
+    }
+}
 
 struct LoginViewScreen_Previews: PreviewProvider {
     static var previews: some View {
@@ -161,7 +194,6 @@ struct LoginButton: View {
     
     var body: some View {
         Button(action: {
-            isSignedIn = true
             onSignIn()
         }) {
             HStack {
@@ -176,8 +208,4 @@ struct LoginButton: View {
             .cornerRadius(10)
         }
     }
-}
-
-#Preview {
-    ViewScreen()
 }
