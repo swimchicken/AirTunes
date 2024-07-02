@@ -11,7 +11,12 @@ import SwiftUI
 struct airtune2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            mp4ViewScreen()
+//            GuidedScreen()
+//            animationView()
+//            NavigationView {
+//                ContentView()
+//            }
         }
     }
 }
