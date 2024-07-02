@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		790601902C31E7C300DD79CA /* app2.json in Resources */ = {isa = PBXBuildFile; fileRef = 7906018F2C31E7C300DD79CA /* app2.json */; };
+		7906019F2C32662900DD79CA /* AirUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7906019E2C32662900DD79CA /* AirUser.swift */; };
+		790601A52C32EBF700DD79CA /* lottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790601A42C32EBF700DD79CA /* lottieView.swift */; };
+		790601A72C32EBFD00DD79CA /* SVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790601A62C32EBFD00DD79CA /* SVGView.swift */; };
+		790601A92C32EC0500DD79CA /* GlowingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790601A82C32EC0500DD79CA /* GlowingView.swift */; };
+		790601AB2C32EC1D00DD79CA /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790601AA2C32EC1D00DD79CA /* RoundedCorners.swift */; };
+		790601AE2C32ED3400DD79CA /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 790601AD2C32ED3400DD79CA /* GoogleSignIn */; };
+		790601B02C32ED3400DD79CA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 790601AF2C32ED3400DD79CA /* GoogleSignInSwift */; };
 		79F280592C303A310050BA63 /* airtune2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280582C303A310050BA63 /* airtune2App.swift */; };
 		79F2805B2C303A310050BA63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2805A2C303A310050BA63 /* ContentView.swift */; };
 		79F2805D2C303A340050BA63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F2805C2C303A340050BA63 /* Assets.xcassets */; };
@@ -14,6 +22,30 @@
 		79F2806A2C303A350050BA63 /* airtune2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280692C303A350050BA63 /* airtune2Tests.swift */; };
 		79F280742C303A350050BA63 /* airtune2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280732C303A350050BA63 /* airtune2UITests.swift */; };
 		79F280762C303A350050BA63 /* airtune2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280752C303A350050BA63 /* airtune2UITestsLaunchTests.swift */; };
+		79F280872C303B250050BA63 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 79F280862C303B250050BA63 /* SDWebImageSwiftUI */; };
+		79F280892C303B580050BA63 /* viewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280882C303B580050BA63 /* viewScreen.swift */; };
+		79F2808B2C303B820050BA63 /* start.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79F2808A2C303B820050BA63 /* start.gif */; };
+		79F2808D2C303B870050BA63 /* enter.gif in Resources */ = {isa = PBXBuildFile; fileRef = 79F2808C2C303B860050BA63 /* enter.gif */; };
+		79F2809B2C303BBC0050BA63 /* animationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F2808F2C303BBB0050BA63 /* animationView.swift */; };
+		79F2809C2C303BBC0050BA63 /* guided3Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280902C303BBB0050BA63 /* guided3Screen.swift */; };
+		79F2809D2C303BBC0050BA63 /* guided6Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280912C303BBC0050BA63 /* guided6Screen.swift */; };
+		79F2809E2C303BBC0050BA63 /* guided7Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280922C303BBC0050BA63 /* guided7Screen.swift */; };
+		79F2809F2C303BBC0050BA63 /* guided2Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280932C303BBC0050BA63 /* guided2Screen.swift */; };
+		79F280A02C303BBC0050BA63 /* guidedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280942C303BBC0050BA63 /* guidedScreen.swift */; };
+		79F280A32C303BBC0050BA63 /* guided5Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280972C303BBC0050BA63 /* guided5Screen.swift */; };
+		79F280A52C303BBC0050BA63 /* guided4Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280992C303BBC0050BA63 /* guided4Screen.swift */; };
+		79F280A82C3041B80050BA63 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 79F280A72C3041B80050BA63 /* Lottie */; };
+		79F280AA2C3045210050BA63 /* aa01.json in Resources */ = {isa = PBXBuildFile; fileRef = 79F280A92C3045210050BA63 /* aa01.json */; };
+		79F280AF2C3066050050BA63 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280AE2C3066050050BA63 /* LocationManager.swift */; };
+		79F280B12C306AEA0050BA63 /* MicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280B02C306AEA0050BA63 /* MicManager.swift */; };
+		79F280B42C3072230050BA63 /* grand-access in Frameworks */ = {isa = PBXBuildFile; productRef = 79F280B32C3072230050BA63 /* grand-access */; };
+		79F280F62C3174530050BA63 /* CorePermissionsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 79F280F52C3174530050BA63 /* CorePermissionsSwiftUI */; };
+		79F280F82C3174530050BA63 /* PermissionsSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 79F280F72C3174530050BA63 /* PermissionsSwiftUI */; };
+		79F280FA2C3174530050BA63 /* PermissionsSwiftUIMicrophone in Frameworks */ = {isa = PBXBuildFile; productRef = 79F280F92C3174530050BA63 /* PermissionsSwiftUIMicrophone */; };
+		79F280FE2C3190110050BA63 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280FD2C3190110050BA63 /* mapView.swift */; };
+		79F281002C31AF960050BA63 /* loginViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F280FF2C31AF960050BA63 /* loginViewScreen.swift */; };
+		79F281022C31B0C90050BA63 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F281012C31B0C90050BA63 /* LoginView.swift */; };
+		79F281092C31D0990050BA63 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F281082C31D0990050BA63 /* PersistenceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +66,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7906018F2C31E7C300DD79CA /* app2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = app2.json; path = ../../../../Downloads/app2.json; sourceTree = "<group>"; };
+		7906019E2C32662900DD79CA /* AirUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirUser.swift; sourceTree = "<group>"; };
+		790601A42C32EBF700DD79CA /* lottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieView.swift; sourceTree = "<group>"; };
+		790601A62C32EBFD00DD79CA /* SVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGView.swift; sourceTree = "<group>"; };
+		790601A82C32EC0500DD79CA /* GlowingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowingView.swift; sourceTree = "<group>"; };
+		790601AA2C32EC1D00DD79CA /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 		79F280552C303A310050BA63 /* airtune2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtune2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F280582C303A310050BA63 /* airtune2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airtune2App.swift; sourceTree = "<group>"; };
 		79F2805A2C303A310050BA63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +82,27 @@
 		79F2806F2C303A350050BA63 /* airtune2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airtune2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F280732C303A350050BA63 /* airtune2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airtune2UITests.swift; sourceTree = "<group>"; };
 		79F280752C303A350050BA63 /* airtune2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airtune2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79F280882C303B580050BA63 /* viewScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = viewScreen.swift; path = "../../../airTune/未命名檔案夾/airTune/screen/viewScreen.swift"; sourceTree = "<group>"; };
+		79F2808A2C303B820050BA63 /* start.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = start.gif; path = ../../../../Desktop/start.gif; sourceTree = "<group>"; };
+		79F2808C2C303B860050BA63 /* enter.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = enter.gif; path = ../../../../Desktop/enter.gif; sourceTree = "<group>"; };
+		79F2808F2C303BBB0050BA63 /* animationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = animationView.swift; path = "../../airTune/未命名檔案夾/airTune/animationView.swift"; sourceTree = "<group>"; };
+		79F280902C303BBB0050BA63 /* guided3Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = guided3Screen.swift; path = "../../airTune/未命名檔案夾/airTune/guided3Screen.swift"; sourceTree = "<group>"; };
+		79F280912C303BBC0050BA63 /* guided6Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = guided6Screen.swift; path = "../../airTune/未命名檔案夾/airTune/guided6Screen.swift"; sourceTree = "<group>"; };
+		79F280922C303BBC0050BA63 /* guided7Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = guided7Screen.swift; path = "../../airTune/未命名檔案夾/airTune/guided7Screen.swift"; sourceTree = "<group>"; };
+		79F280932C303BBC0050BA63 /* guided2Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = guided2Screen.swift; path = "../../airTune/未命名檔案夾/airTune/guided2Screen.swift"; sourceTree = "<group>"; };
+		79F280942C303BBC0050BA63 /* guidedScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = guidedScreen.swift; path = "../../airTune/未命名檔案夾/airTune/guidedScreen.swift"; sourceTree = "<group>"; };
+		79F280972C303BBC0050BA63 /* guided5Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = guided5Screen.swift; path = "../../airTune/未命名檔案夾/airTune/guided5Screen.swift"; sourceTree = "<group>"; };
+		79F280992C303BBC0050BA63 /* guided4Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = guided4Screen.swift; path = "../../airTune/未命名檔案夾/airTune/guided4Screen.swift"; sourceTree = "<group>"; };
+		79F280A92C3045210050BA63 /* aa01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = aa01.json; path = ../../../../Downloads/aa01.json; sourceTree = "<group>"; };
+		79F280AD2C3065A10050BA63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		79F280AE2C3066050050BA63 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		79F280B02C306AEA0050BA63 /* MicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicManager.swift; sourceTree = "<group>"; };
+		79F280EF2C316F4A0050BA63 /* app.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = app.mp4; path = ../../../../Downloads/app.mp4; sourceTree = "<group>"; };
+		79F280FD2C3190110050BA63 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
+		79F280FF2C31AF960050BA63 /* loginViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewScreen.swift; sourceTree = "<group>"; };
+		79F281012C31B0C90050BA63 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		79F281032C31B2A90050BA63 /* airtune2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = airtune2.entitlements; sourceTree = "<group>"; };
+		79F281082C31D0990050BA63 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +110,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F280F82C3174530050BA63 /* PermissionsSwiftUI in Frameworks */,
+				79F280FA2C3174530050BA63 /* PermissionsSwiftUIMicrophone in Frameworks */,
+				79F280872C303B250050BA63 /* SDWebImageSwiftUI in Frameworks */,
+				790601B02C32ED3400DD79CA /* GoogleSignInSwift in Frameworks */,
+				79F280A82C3041B80050BA63 /* Lottie in Frameworks */,
+				79F280F62C3174530050BA63 /* CorePermissionsSwiftUI in Frameworks */,
+				79F280B42C3072230050BA63 /* grand-access in Frameworks */,
+				790601AE2C32ED3400DD79CA /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +141,7 @@
 		79F2804C2C303A310050BA63 = {
 			isa = PBXGroup;
 			children = (
+				7906019E2C32662900DD79CA /* AirUser.swift */,
 				79F280572C303A310050BA63 /* airtune2 */,
 				79F280682C303A350050BA63 /* airtune2Tests */,
 				79F280722C303A350050BA63 /* airtune2UITests */,
@@ -94,8 +162,26 @@
 		79F280572C303A310050BA63 /* airtune2 */ = {
 			isa = PBXGroup;
 			children = (
+				7906018F2C31E7C300DD79CA /* app2.json */,
+				79F281032C31B2A90050BA63 /* airtune2.entitlements */,
+				79F280AD2C3065A10050BA63 /* Info.plist */,
+				79F280EF2C316F4A0050BA63 /* app.mp4 */,
+				79F280A92C3045210050BA63 /* aa01.json */,
+				79F2808C2C303B860050BA63 /* enter.gif */,
+				79F2808A2C303B820050BA63 /* start.gif */,
+				79F280842C303ADD0050BA63 /* model */,
+				79F280832C303AD60050BA63 /* screen */,
+				79F280822C303ACD0050BA63 /* view */,
 				79F280582C303A310050BA63 /* airtune2App.swift */,
-				79F2805A2C303A310050BA63 /* ContentView.swift */,
+				79F280FF2C31AF960050BA63 /* loginViewScreen.swift */,
+				79F2808F2C303BBB0050BA63 /* animationView.swift */,
+				79F280942C303BBC0050BA63 /* guidedScreen.swift */,
+				79F280932C303BBC0050BA63 /* guided2Screen.swift */,
+				79F280902C303BBB0050BA63 /* guided3Screen.swift */,
+				79F280992C303BBC0050BA63 /* guided4Screen.swift */,
+				79F280972C303BBC0050BA63 /* guided5Screen.swift */,
+				79F280912C303BBC0050BA63 /* guided6Screen.swift */,
+				79F280922C303BBC0050BA63 /* guided7Screen.swift */,
 				79F2805C2C303A340050BA63 /* Assets.xcassets */,
 				79F2805E2C303A340050BA63 /* Preview Content */,
 			);
@@ -127,6 +213,38 @@
 			path = airtune2UITests;
 			sourceTree = "<group>";
 		};
+		79F280822C303ACD0050BA63 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				790601AA2C32EC1D00DD79CA /* RoundedCorners.swift */,
+				79F280FD2C3190110050BA63 /* mapView.swift */,
+				790601A82C32EC0500DD79CA /* GlowingView.swift */,
+				790601A62C32EBFD00DD79CA /* SVGView.swift */,
+				790601A42C32EBF700DD79CA /* lottieView.swift */,
+				79F281012C31B0C90050BA63 /* LoginView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		79F280832C303AD60050BA63 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				79F2805A2C303A310050BA63 /* ContentView.swift */,
+				79F280882C303B580050BA63 /* viewScreen.swift */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		79F280842C303ADD0050BA63 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				79F280B02C306AEA0050BA63 /* MicManager.swift */,
+				79F281082C31D0990050BA63 /* PersistenceController.swift */,
+				79F280AE2C3066050050BA63 /* LocationManager.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +261,16 @@
 			dependencies = (
 			);
 			name = airtune2;
+			packageProductDependencies = (
+				79F280862C303B250050BA63 /* SDWebImageSwiftUI */,
+				79F280A72C3041B80050BA63 /* Lottie */,
+				79F280B32C3072230050BA63 /* grand-access */,
+				79F280F52C3174530050BA63 /* CorePermissionsSwiftUI */,
+				79F280F72C3174530050BA63 /* PermissionsSwiftUI */,
+				79F280F92C3174530050BA63 /* PermissionsSwiftUIMicrophone */,
+				790601AD2C32ED3400DD79CA /* GoogleSignIn */,
+				790601AF2C32ED3400DD79CA /* GoogleSignInSwift */,
+			);
 			productName = airtune2;
 			productReference = 79F280552C303A310050BA63 /* airtune2.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +343,13 @@
 				Base,
 			);
 			mainGroup = 79F2804C2C303A310050BA63;
+			packageReferences = (
+				79F280852C303B250050BA63 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				79F280A62C303F430050BA63 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				79F280B22C3072230050BA63 /* XCRemoteSwiftPackageReference "grand-access" */,
+				79F280F42C3174530050BA63 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */,
+				790601AC2C32ED3400DD79CA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 79F280562C303A310050BA63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +367,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F280602C303A340050BA63 /* Preview Assets.xcassets in Resources */,
+				79F2808B2C303B820050BA63 /* start.gif in Resources */,
 				79F2805D2C303A340050BA63 /* Assets.xcassets in Resources */,
+				79F280AA2C3045210050BA63 /* aa01.json in Resources */,
+				790601902C31E7C300DD79CA /* app2.json in Resources */,
+				79F2808D2C303B870050BA63 /* enter.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +397,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F2805B2C303A310050BA63 /* ContentView.swift in Sources */,
+				79F280AF2C3066050050BA63 /* LocationManager.swift in Sources */,
 				79F280592C303A310050BA63 /* airtune2App.swift in Sources */,
+				7906019F2C32662900DD79CA /* AirUser.swift in Sources */,
+				79F280A52C303BBC0050BA63 /* guided4Screen.swift in Sources */,
+				790601A92C32EC0500DD79CA /* GlowingView.swift in Sources */,
+				790601A72C32EBFD00DD79CA /* SVGView.swift in Sources */,
+				79F280B12C306AEA0050BA63 /* MicManager.swift in Sources */,
+				790601A52C32EBF700DD79CA /* lottieView.swift in Sources */,
+				79F2809F2C303BBC0050BA63 /* guided2Screen.swift in Sources */,
+				79F281022C31B0C90050BA63 /* LoginView.swift in Sources */,
+				79F2809B2C303BBC0050BA63 /* animationView.swift in Sources */,
+				79F280892C303B580050BA63 /* viewScreen.swift in Sources */,
+				79F2809D2C303BBC0050BA63 /* guided6Screen.swift in Sources */,
+				79F281092C31D0990050BA63 /* PersistenceController.swift in Sources */,
+				79F280FE2C3190110050BA63 /* mapView.swift in Sources */,
+				79F281002C31AF960050BA63 /* loginViewScreen.swift in Sources */,
+				79F280A02C303BBC0050BA63 /* guidedScreen.swift in Sources */,
+				79F2809C2C303BBC0050BA63 /* guided3Screen.swift in Sources */,
+				79F2809E2C303BBC0050BA63 /* guided7Screen.swift in Sources */,
+				790601AB2C32EC1D00DD79CA /* RoundedCorners.swift in Sources */,
+				79F280A32C303BBC0050BA63 /* guided5Screen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,11 +578,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = airtune2/airtune2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"airtune2/Preview Content\"";
+				DEVELOPMENT_TEAM = 8BFXWBZ54T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = airtune2/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app uses iCloud to personalize your music experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone for audio recording functionality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,11 +613,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = airtune2/airtune2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"airtune2/Preview Content\"";
+				DEVELOPMENT_TEAM = 8BFXWBZ54T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = airtune2/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "This app uses iCloud to personalize your music experience.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app needs access to your location to provide location-based services.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone for audio recording functionality";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -582,6 +755,92 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		790601AC2C32ED3400DD79CA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.0;
+			};
+		};
+		79F280852C303B250050BA63 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+		79F280A62C303F430050BA63 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+		79F280B22C3072230050BA63 /* XCRemoteSwiftPackageReference "grand-access" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/The-Igor/grand-access.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		79F280F42C3174530050BA63 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:jevonmao/PermissionsSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		790601AD2C32ED3400DD79CA /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 790601AC2C32ED3400DD79CA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		790601AF2C32ED3400DD79CA /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 790601AC2C32ED3400DD79CA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		79F280862C303B250050BA63 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F280852C303B250050BA63 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		79F280A72C3041B80050BA63 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F280A62C303F430050BA63 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		79F280B32C3072230050BA63 /* grand-access */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F280B22C3072230050BA63 /* XCRemoteSwiftPackageReference "grand-access" */;
+			productName = "grand-access";
+		};
+		79F280F52C3174530050BA63 /* CorePermissionsSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F280F42C3174530050BA63 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = CorePermissionsSwiftUI;
+		};
+		79F280F72C3174530050BA63 /* PermissionsSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F280F42C3174530050BA63 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUI;
+		};
+		79F280F92C3174530050BA63 /* PermissionsSwiftUIMicrophone */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79F280F42C3174530050BA63 /* XCRemoteSwiftPackageReference "PermissionsSwiftUI" */;
+			productName = PermissionsSwiftUIMicrophone;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79F2804D2C303A310050BA63 /* Project object */;
 }

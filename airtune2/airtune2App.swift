@@ -1,22 +1,14 @@
-//
-//  airtune2App.swift
-//  airtune2
-//
-//  Created by swimchichen on 2024/6/29.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct airtune2App: App {
+//    @StateObject private var modelContainerViewModel = ModelContainerViewModel()
+    
     var body: some Scene {
         WindowGroup {
-//            mp4ViewScreen()
-//            GuidedScreen()
-//            animationView()
-//            NavigationView {
-//                ContentView()
-//            }
+            LoginViewScreen()
+//                .environmentObject(modelContainerViewModel)
         }
     }
 }

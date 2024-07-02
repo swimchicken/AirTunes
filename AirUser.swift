@@ -1,16 +1,9 @@
-//
-//  User.swift
-//  airtune2
-//
-//  Created by swimchichen on 2024/7/1.
-//
-//
-
 import Foundation
 import SwiftData
 
-
-@Model public class User {
+@Model
+public final class AirUser: Identifiable {
+    public var id: Int32
     var gender: Int32? = 0
     var name: String?
     var location: String?
@@ -18,9 +11,15 @@ import SwiftData
     var style: String?
     var workstyle: String?
     var atmosphere: String?
-    var id: Int32? = 0
-    public init() {
 
+    public init(gender: Int32? = nil, name: String? = nil, location: String? = nil, age: Int16? = nil, style: String? = nil, workstyle: String? = nil, atmosphere: String? = nil, id: Int32) {
+        self.gender = gender
+        self.name = name
+        self.location = location
+        self.age = age
+        self.style = style
+        self.workstyle = workstyle
+        self.atmosphere = atmosphere
+        self.id = id
     }
-    
 }
